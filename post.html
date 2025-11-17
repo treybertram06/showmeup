@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Post</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="postSubmission.js" defer></script>
+    <script src="js/postSubmission.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,36 +16,10 @@
         </a>
     </header>
 
-
-
-
-
-
-     <nav class="footer-nav" role="navigation" aria-label="Primary">
-        <div class="nav-inner">
-            <a class="nav-btn" href="index.html" aria-label="Home">
-                <span class="nav-ic">🏠</span>
-                <span>Home</span>
-            </a>
-            <a class="nav-btn" href="search.html" aria-label="Search">
-                <span class="nav-ic">🔍</span>
-                <span>Search</span>
-            </a>
-            <a class="nav-btn" href="post.html" aria-label="Post">
-                <span class="nav-ic">➕</span>
-                <span>Post</span>
-            </a>
-             <a class="nav-btn" href="your-standings.html" aria-label="Standings">
-                <span class="nav-ic">🥇</span>
-                <span>Standings</span>
-            </a>
-        </div>
-    </nav>
-  
     <main class="post-container">
         <div class="post-form-wrapper">
             <h2>Create a Post</h2>
-            <form id="postform" class="post-form">
+            <form id="postForm" class="post-form">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -70,8 +44,31 @@
                 
                 <button type="submit" class="submit-btn">Post</button>
             </form>
+
+            <p id="message"></p>
         </div>
     </main>
+
+    <nav class="footer-nav" role="navigation" aria-label="Primary">
+       <div class="nav-inner">
+           <a class="nav-btn" href="index.html" aria-label="Home">
+               <span class="nav-ic">🏠</span>
+               <span>Home</span>
+           </a>
+           <a class="nav-btn" href="search.html" aria-label="Search">
+               <span class="nav-ic">🔍</span>
+               <span>Search</span>
+           </a>
+           <a class="nav-btn" href="post.html" aria-label="Post">
+               <span class="nav-ic">➕</span>
+               <span>Post</span>
+           </a>
+            <a class="nav-btn" href="your-standings.html" aria-label="Standings">
+               <span class="nav-ic">🥇</span>
+               <span>Standings</span>
+           </a>
+       </div>
+   </nav>
     
 </body>
 </html>
